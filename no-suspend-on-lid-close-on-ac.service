@@ -1,0 +1,9 @@
+[Unit]
+Description=Determine if running on ac or battery durring boot
+After=dbus.service
+
+[Service]
+ExecStart=/sbin/no-suspend-on-ac
+
+[Install]
+WantedBy=multi-user.target

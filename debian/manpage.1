@@ -1,0 +1,52 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" (C) Copyright 2015 G. Allen Morris III <gam3@gam3.net>,
+.\"
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH NO-SUSPEND-ON-AC SECTION "September 26, 2015"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+no-suspend-on-ac \- Prevent suspend on lid close when on AC power
+.SH SYNOPSIS
+.B no-suspend-on-ac
+.RI [battery|ac]
+.br
+.SH DESCRIPTION
+This manual page documents briefly the
+.B no-suspend-on-ac
+command.
+.PP
+.\" TeX users may be more comfortable with the \fB<whatever>\fP and
+.\" \fI<whatever>\fP escape sequences to invode bold face and italics,
+.\" respectively.
+\fBno-suspend-on-ac\fP is a program that prevents \fBsystemd\fP from suspending
+the system when it is on ac power.
+.SH OPTIONS
+These programs follow the usual GNU command line syntax, with long
+options starting with two dashes (`-').
+A summary of options is included below.
+For a complete description, see the Info files.
+.TP
+.B \-h, \-\-help
+Show summary of options.
+.TP
+.B \-v, \-\-version
+Show version of program.
+.SH SEE ALSO
+.BR systemctl (1),
+.BR systemd-inhibit (1).
+.br
+In most cases this program is not started by the user,
+but controled by \fBudev\fP and \fBsystemd\fP. 

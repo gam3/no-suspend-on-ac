@@ -1,0 +1,15 @@
+Source: no-suspend-on-ac
+Section: unknown
+Priority: optional
+Maintainer: G. Allen Morris III <gam3@gam3.net>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: http://github.com/
+#Vcs-Git: git://anonscm.debian.org/collab-maint/no-suspend-on-ac.git
+#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/no-suspend-on-ac.git;a=summary
+
+Package: no-suspend-on-ac
+Architecture: all
+Depends: ${misc:Depends}
+Description: Keep laptop from susending on lid close when on AC
+ Keep laptop from susending on lid close when on AC

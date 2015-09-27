@@ -1,0 +1,10 @@
+debian/copyright
+debian/docs
+debian/files
+debian/init.d.ex
+debian/no-suspend-on-ac.debhelper.log
+debian/no-suspend-on-ac.default.ex
+debian/no-suspend-on-ac.substvars
+debian/no-suspend-on-ac/
+debian/rules.dh7
+

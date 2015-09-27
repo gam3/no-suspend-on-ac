@@ -1,0 +1,6 @@
+[Unit]
+Description=When on AC power, do not suspend on lid close
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c '/bin/systemd-inhibit --what=handle-lid-switch --who="$USER" --why="Do not suspend on lid close when on AC Power" --mode=block /bin/bash -c "while sleep 60; do :; done"'

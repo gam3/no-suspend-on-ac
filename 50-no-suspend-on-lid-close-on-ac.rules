@@ -1,0 +1,2 @@
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="0", RUN+="/bin/systemctl stop no-suspend-on-lid-close"
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="1", RUN+="/bin/systemctl start no-suspend-on-lid-close"

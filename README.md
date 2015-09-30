@@ -14,3 +14,10 @@ With the advent of Systemd this process changes.
 
 I created this package to make it easy to achieve this feature on Debian.
 
+## Similar code
+
+I got my idea for this package from the blog entry at:
+
+http://nrocco.github.io/2014/06/05/suspend-prevent-systemd.html
+
+And the code in this package is mostly a rewrite of the code from that blog entry.
